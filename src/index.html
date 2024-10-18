@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Vanilla JavaScript App</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2qoyrqXJOPahRFLG4uAZZHW91bF9PQkA&libraries=places"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -20,6 +22,9 @@
         document.querySelector('#name').textContent = text;
     }());
     </script>
+    <div id="map" alt="not found" style="height: 500px; width: 100%;"></div>
+    <button onclick="pickRandomRestaurant()">Pick a Random Restaurant</button>
+	</div>
 </body>
 
 </html>
